@@ -1,0 +1,140 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: http://127.0.0.1:8080/
+Subject: Guess My Number!
+Date: Sun, 21 May 2023 05:20:57 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--aKOvrF8k7M3XhQa4SebFa2Mbds9xE13Z3MxTDAPbJ1----"
+
+
+------MultipartBoundary--aKOvrF8k7M3XhQa4SebFa2Mbds9xE13Z3MxTDAPbJ1----
+Content-Type: text/html
+Content-ID: <frame-D36189A2CD5B6AEE6863783D2F7A1FE1@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://127.0.0.1:8080/
+
+<!DOCTYPE html><html lang=3D"en"><head><meta http-equiv=3D"Content-Type" co=
+ntent=3D"text/html; charset=3DUTF-8">
+   =20
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=
+=3D1.0">
+    <meta http-equiv=3D"X-UA-Compatible" content=3D"ie=3Dedge">
+    <link rel=3D"stylesheet" href=3D"http://127.0.0.1:8080/style.css">
+    <title>Guess My Number!</title>
+  </head>
+  <body>
+    <header>
+      <h1>Guess My Number!</h1>
+      <p class=3D"between">(Between 1 and 20)</p>
+      <button class=3D"btn again">Again!</button>
+      <div class=3D"number">?</div>
+    </header>
+    <main>
+      <section class=3D"left">
+        <input type=3D"number" class=3D"guess">
+        <button class=3D"btn check">Check!</button>
+      </section>
+      <section class=3D"right">
+        <p class=3D"message">Start guessing...</p>
+        <p class=3D"label-score">=F0=9F=92=AF Score: <span class=3D"score">=
+0</span></p>
+        <p class=3D"label-highscore">
+          =F0=9F=A5=87 Highscore: <span class=3D"highscore">0</span>
+        </p>
+      </section>
+    </main>
+   =20
+  <!-- Code injected by live-server -->
+
+
+
+</body></html>
+------MultipartBoundary--aKOvrF8k7M3XhQa4SebFa2Mbds9xE13Z3MxTDAPbJ1----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://127.0.0.1:8080/style.css
+
+@charset "utf-8";
+
+@import url("https://fonts.googleapis.com/css?family=3DPress+Start+2P&displ=
+ay=3Dswap");
+
+* { margin: 0px; padding: 0px; box-sizing: inherit; }
+
+html { font-size: 62.5%; box-sizing: border-box; }
+
+body { font-family: "Press Start 2P", sans-serif; color: rgb(238, 238, 238)=
+; background-color: rgb(34, 34, 34); }
+
+header { position: relative; height: 35vh; border-bottom: 7px solid rgb(238=
+, 238, 238); }
+
+main { height: 65vh; color: rgb(238, 238, 238); display: flex; align-items:=
+ center; justify-content: space-around; }
+
+.left { width: 52rem; display: flex; flex-direction: column; align-items: c=
+enter; }
+
+.right { width: 52rem; font-size: 2rem; }
+
+h1 { font-size: 4rem; text-align: center; position: absolute; width: 100%; =
+top: 52%; left: 50%; transform: translate(-50%, -50%); }
+
+.number { background: rgb(238, 238, 238); color: rgb(51, 51, 51); font-size=
+: 6rem; width: 15rem; padding: 3rem 0rem; text-align: center; position: abs=
+olute; bottom: 0px; left: 50%; transform: translate(-50%, 50%); }
+
+.between { font-size: 1.4rem; position: absolute; top: 2rem; right: 2rem; }
+
+.again { position: absolute; top: 2rem; left: 2rem; }
+
+.guess { background: none; border: 4px solid rgb(238, 238, 238); font-famil=
+y: inherit; color: inherit; font-size: 5rem; padding: 2.5rem; width: 25rem;=
+ text-align: center; display: block; margin-bottom: 3rem; }
+
+.btn { border: none; background-color: rgb(238, 238, 238); color: rgb(34, 3=
+4, 34); font-size: 2rem; font-family: inherit; padding: 2rem 3rem; cursor: =
+pointer; }
+
+.btn:hover { background-color: rgb(204, 204, 204); }
+
+.message { margin-bottom: 8rem; height: 3rem; }
+
+.label-score { margin-bottom: 2rem; }
+------MultipartBoundary--aKOvrF8k7M3XhQa4SebFa2Mbds9xE13Z3MxTDAPbJ1----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap
+
+@charset "utf-8";
+
+@font-face { font-family: "Press Start 2P"; font-style: normal; font-weight=
+: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/pressstart=
+2p/v15/e3t4euO8T-267oIAQAu6jDQyK3nYivNm4I81PZQ.woff2") format("woff2"); uni=
+code-range: U+460-52F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2=
+E-FE2F; }
+
+@font-face { font-family: "Press Start 2P"; font-style: normal; font-weight=
+: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/pressstart=
+2p/v15/e3t4euO8T-267oIAQAu6jDQyK3nRivNm4I81PZQ.woff2") format("woff2"); uni=
+code-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: "Press Start 2P"; font-style: normal; font-weight=
+: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/pressstart=
+2p/v15/e3t4euO8T-267oIAQAu6jDQyK3nWivNm4I81PZQ.woff2") format("woff2"); uni=
+code-range: U+370-3FF; }
+
+@font-face { font-family: "Press Start 2P"; font-style: normal; font-weight=
+: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/pressstart=
+2p/v15/e3t4euO8T-267oIAQAu6jDQyK3nbivNm4I81PZQ.woff2") format("woff2"); uni=
+code-range: U+100-2AF, U+304, U+308, U+329, U+1E00-1E9F, U+1EF2-1EFF, U+202=
+0, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: "Press Start 2P"; font-style: normal; font-weight=
+: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/pressstart=
+2p/v15/e3t4euO8T-267oIAQAu6jDQyK3nVivNm4I81.woff2") format("woff2"); unicod=
+e-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U=
++308, U+329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U=
++2215, U+FEFF, U+FFFD; }
+------MultipartBoundary--aKOvrF8k7M3XhQa4SebFa2Mbds9xE13Z3MxTDAPbJ1------
