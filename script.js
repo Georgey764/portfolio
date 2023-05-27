@@ -13,3 +13,12 @@ $(window).on("scroll", (e) => {
     $("header").removeClass("sticky");
   }
 });
+
+$(".experience-pic").addClass("bNw");
+$(".experience-pic").on("mouseover", function (e) {
+  $("#" + e.target.id).removeClass("bNw");
+});
+
+$(".experience-pic").on("mouseout", function (e) {
+  $("#" + e.target.id).addClass("bNw");
+});
