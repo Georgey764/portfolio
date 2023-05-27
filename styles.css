@@ -157,8 +157,9 @@ header {
   width: 100vw;
   background-color: white;
   text-align: center;
-  padding: 5rem 10vw 4rem 10vw;
+  padding: 4rem 10vw 4rem 10vw;
   font-family: "Lato", sans-serif;
+  font-weight: 300;
 }
 
 .about-container {
@@ -175,13 +176,32 @@ header {
 #portrait {
   border-radius: 50%;
   margin: 1.8rem auto;
+  height: 200px;
+}
+
+.abh {
+  font-size: 1.5rem;
+  margin-bottom: -0.3rem;
+}
+
+#abt,
+#abt1,
+#abt2 {
+  margin-top: 1rem;
+}
+
+#about-icon,
+#about-icon1,
+#about-icon2 {
+  font-size: 55rem;
 }
 
 .container-fluid {
-  background-color: #e1e3e6;
+  background-color: #e6e6e6;
   border-radius: 0.25rem;
   padding: 1rem;
   margin-top: 2rem;
+  color: #545454;
 }
 
 .container-fluid i {
@@ -194,8 +214,9 @@ header {
   width: 100vw;
   background-color: #e1e3e6;
   padding-top: 3rem;
-  padding: 3rem 1rem 1rem 1rem;
+  padding: 4rem 1rem 1rem 1rem;
   font-family: "Lato", sans-serif;
+  font-weight: 300;
 }
 
 .info {
@@ -238,7 +259,7 @@ header {
 /* Experience Page */
 
 .experience-page {
-  padding: 5rem 0 4rem 0;
+  padding: 4rem 0 4rem 0;
   text-align: center;
   font-family: "Lato", sans-serif;
 }
@@ -374,7 +395,7 @@ header {
 }
 
 .lower-container {
-  background: #292929;
+  background: #262626;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -394,18 +415,28 @@ header {
 
 .contact-pic {
   color: #b4b4bb;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 
 /* footer */
 
 footer {
-  background-color: #292929;
+  background-color: #262626;
   color: #b4b4bb;
   text-align: center;
-  font-size: 2rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
 }
 
 .rocket {
   display: block;
+  color: white;
+  margin-top: 0.7rem;
+  font-size: 2rem;
+}
+
+.footer-text {
+  font-size: 0.9rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
 }
