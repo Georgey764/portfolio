@@ -4,8 +4,13 @@
   }
 }
 
+.hidden {
+  visibility: hidden;
+}
+
 :root {
   --black: rgba(0, 0, 0, 0.5);
+  --animate-duration: 3s;
 }
 
 *,
@@ -52,6 +57,11 @@ header {
   color: white;
   font-size: 1.2rem;
   font-weight: 200;
+}
+
+.header-left-text a {
+  text-decoration: none;
+  color: white;
 }
 
 .left-header-image {
@@ -103,7 +113,6 @@ header {
   background: linear-gradient(180deg, var(--black), var(--black)),
     url("Photos/background.jpg");
   background-position: center;
-  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -193,7 +202,7 @@ header {
 #about-icon,
 #about-icon1,
 #about-icon2 {
-  font-size: 55rem;
+  color: #636363;
 }
 
 .container-fluid {
@@ -205,7 +214,7 @@ header {
 }
 
 .container-fluid i {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 /* Passion Page */
@@ -213,8 +222,7 @@ header {
 .passion-page {
   width: 100vw;
   background-color: #e1e3e6;
-  padding-top: 3rem;
-  padding: 4rem 1rem 1rem 1rem;
+  padding: 4rem 1rem 4rem 1rem;
   font-family: "Lato", sans-serif;
   font-weight: 300;
 }
@@ -235,7 +243,7 @@ header {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 70px;
 }
 
 .cells {
@@ -248,12 +256,30 @@ header {
   text-align: center;
 }
 
+.cell-two {
+  --animate-delay: 1.5s;
+}
+
+.cell-three {
+  --animate-delay: 2s;
+}
+
 .circle {
   background-color: #404040;
   width: 200px;
   height: 200px;
   border-radius: 50%;
   margin-bottom: 20px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.passion-icon {
+  position: absolute;
+  color: white;
+  font-size: 2.5rem;
 }
 
 /* Experience Page */
@@ -335,7 +361,7 @@ header {
   background: transparent;
   color: white;
   border: 1px solid white;
-  padding: 1rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
 }
 
 .resume-button:hover {
@@ -418,6 +444,10 @@ header {
   font-size: 1.6rem;
 }
 
+.lower-container a {
+  text-decoration: none;
+}
+
 /* footer */
 
 footer {
@@ -439,4 +469,10 @@ footer {
   font-size: 0.9rem;
   padding-top: 1rem;
   padding-bottom: 2rem;
+}
+
+.to-the-top {
+  color: white;
+  margin: -10px;
+  font-size: 0.8rem;
 }

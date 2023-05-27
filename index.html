@@ -10,6 +10,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
@@ -23,7 +27,12 @@
   <body>
     <header class="header">
       <div class="left-header">
-        <span class="header-left-text">GEORGE_KHAWAS</span>
+        <span class="header-left-text"
+          ><a
+            href="https://georgey764.github.io/portfolio-website-v1/index.html"
+            >GEORGE_KHAWAS</a
+          ></span
+        >
       </div>
       <div class="right-header">
         <nav class="nav-bar" id="navbar">
@@ -40,9 +49,14 @@
     <main>
       <div class="home-page" id="welcome-section">
         <div class="home-flex-container">
-          <h1 class="home-upper-text">HI, I'M GEORGE</h1>
-          <p class="home-lower-text">Web Developer Enthusiast</p>
+          <h1 class="home-upper-text animate__animated animate__fadeInDown">
+            HI, I'M GEORGE
+          </h1>
+          <p class="home-lower-text animate__animated animate__fadeInUp">
+            Web Developer Enthusiast
+          </p>
         </div>
+
         <a
           class="fa-solid fa-angle-down"
           id="angle-down"
@@ -50,8 +64,8 @@
         ></a>
       </div>
 
-      <div id="about-page" class="about-page">
-        <div class="about-container">
+      <div id="about-page" class="about-page hidden">
+        <div class="about-container animate__animated animate__fadeIn">
           <p class="about-header">ABOUT ME</p>
           <img
             id="portrait"
@@ -71,15 +85,15 @@
             </div>
             <div class="row">
               <div class="col-sm-4">
-                <i class="about-icon fa-brands fa-edge-legacy"></i>
+                <i id="about-icon" class="fa-brands fa-edge-legacy"></i>
                 <p id="abt">Web Developer</p>
               </div>
               <div class="col-sm-4">
-                <i class="about-icon fa-solid fa-keyboard"></i>
+                <i id="about-icon1" class="about-icon fa-solid fa-keyboard"></i>
                 <p id="abt1">Coding Enthusiast</p>
               </div>
               <div class="col-sm-4">
-                <i class="about-icon fa-solid fa-guitar"></i>
+                <i id="about-icon2" class="about-icon fa-solid fa-guitar"></i>
                 <p id="abt2">Guitarist</p>
               </div>
             </div>
@@ -91,8 +105,10 @@
           <p>MY PASSION</p>
         </div>
         <div class="flex-container">
-          <div class="cells cell-one">
-            <div class="circle"></div>
+          <div class="cells cell-one hidden">
+            <div class="circle">
+              <i class="passion-icon fa-solid fa-laptop"></i>
+            </div>
             <p>DESIGN</p>
             <p class="info">
               Design isn't just what a product looks like and feels like on the
@@ -102,8 +118,10 @@
               mediums.
             </p>
           </div>
-          <div class="cells cell-two">
-            <div class="circle"></div>
+          <div class="cells cell-two hidden">
+            <div class="circle">
+              <i class="passion-icon fa-solid fa-code"></i>
+            </div>
             <p>DEVELOPMENT</p>
             <p class="info">
               With a strong foundation in computer science, I'm passionate about
@@ -113,8 +131,10 @@
               beautiful software.
             </p>
           </div>
-          <div class="cells cell-three">
-            <div class="circle"></div>
+          <div class="cells cell-three hidden">
+            <div class="circle">
+              <i class="passion-icon fa-regular fa-lightbulb"></i>
+            </div>
             <p>INVOLVEMENT</p>
             <p class="info">
               At ULM, I am curently LOREM IPSJAOSJDAOSIDHASLDKNALSKDNAS AD
@@ -124,7 +144,7 @@
         </div>
       </div>
 
-      <div id="experience-page" class="experience-page">
+      <div id="experience-page" class="experience-page hidden">
         <h2 class="experience-header">EXPERIENCE</h2>
 
         <div class="experience-pic-container">
@@ -161,7 +181,7 @@
           <div class="resume-text-container">
             <p class="resume-text">CHECK OUT MY RÉSUMÉ</p>
             <a href="File/resume.pdf" download="resume.pdf">
-              <button class="resume-button">DOWNLOAD</button></a
+              <button class="hidden resume-button">DOWNLOAD</button></a
             >
           </div>
         </div>
@@ -173,7 +193,7 @@
 
       <div id="contact-page" class="contact-page">
         <div class="upper-container">
-          <i class="fa-regular fa-paper-plane icon"></i>
+          <i class="hidden fa-regular fa-paper-plane icon"></i>
           <p class="contact-header">GET IN TOUCH!</p>
           <p class="contact-sub-header">
             Even if it's just a small hello, feel free to shoot me an email!
@@ -183,21 +203,32 @@
           >
         </div>
         <div class="lower-container">
-          <div class="contact-box">
-            <i class="contact-pic fa-brands fa-linkedin-in"></i>
-          </div>
-          <div class="contact-box">
-            <i class="contact-pic fa-brands fa-instagram"></i>
-          </div>
-          <div class="contact-box">
-            <i class="contact-pic fa-brands fa-github"></i>
-          </div>
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/george-khawas-48074122a/"
+            ><div class="contact-box">
+              <i class="contact-pic fa-brands fa-linkedin-in"></i></div
+          ></a>
+          <a target="_blank" href="https://www.instagram.com/george_skh/"
+            ><div class="contact-box">
+              <i class="contact-pic fa-brands fa-instagram"></i></div
+          ></a>
+          <a target="_blank" href="https://github.com/Georgey764"
+            ><div class="contact-box">
+              <i class="contact-pic fa-brands fa-github"></i>
+            </div>
+          </a>
         </div>
       </div>
     </main>
 
     <footer>
-      <p><i class="rocket fa-brands fa-space-awesome"></i></p>
+      <p>
+        <a href="#welcome-section">
+          <i class="rocket fa-brands fa-space-awesome"></i
+        ></a>
+      </p>
+      <p class="hidden to-the-top">Beam to the top!</p>
       <i class="footer-text fa-regular fa-copyright"></i>
       <span class="footer-text">George Khawas 2023</span>
     </footer>
