@@ -8,10 +8,6 @@
   opacity: 0;
 }
 
-.hidden-drop-down {
-  display: none;
-}
-
 :root {
   --black: rgba(0, 0, 0, 0.5);
   --animate-duration: 3s;
@@ -376,6 +372,7 @@ header {
   color: white;
   border: 1px solid white;
   padding: 0.5rem 1rem 0.5rem 1rem;
+  color: white;
 }
 
 .resume-button:hover {
@@ -506,27 +503,23 @@ footer {
     font-size: 1.5rem;
   }
 
-  .drop-down {
-    position: fixed;
-    width: 100vw;
-    height: 40vh;
-    top: 3rem;
-    background: black;
-    z-index: 1;
-    transition: height 2s linear;
-    left: 0;
-    border-top: 1px solid #212121;
-  }
-
   .right-header {
+    border-top: 1px solid #212121;
     margin: 0;
     position: absolute;
     top: 3rem;
     width: 100vw;
-    height: 40vh;
     visibility: visible;
     left: 0;
     z-index: 3;
+    height: 40vh;
+    overflow: hidden;
+    transition: height 0.3s ease;
+    background-color: black;
+  }
+
+  .nav-icon:hover {
+    cursor: pointer;
   }
 
   .nav-item-container {
@@ -548,5 +541,9 @@ footer {
 
   .experience-pic {
     filter: grayscale(0);
+  }
+
+  .hidden-drop-down {
+    height: 0vh !important;
   }
 }
