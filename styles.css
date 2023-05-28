@@ -8,6 +8,10 @@
   opacity: 0;
 }
 
+.hidden-drop-down {
+  display: none;
+}
+
 :root {
   --black: rgba(0, 0, 0, 0.5);
   --animate-duration: 3s;
@@ -396,13 +400,14 @@ header {
   background-color: #e3e3e3;
   width: 100vw;
   height: auto;
-  padding: 5rem 0 0 0;
+  padding: 5rem 0rem 0 0rem;
   text-align: center;
   font-family: "Lato", sans-serif;
 }
 
 .upper-container {
   margin-bottom: 3rem;
+  padding: 0 1rem;
 }
 
 .icon {
@@ -495,8 +500,41 @@ footer {
     background: black;
   }
 
+  .nav-icon {
+    color: white;
+    font-size: 1.5rem;
+  }
+
+  .drop-down {
+    position: fixed;
+    width: 100vw;
+    height: 40vh;
+    top: 3rem;
+    background: black;
+    z-index: 1;
+    transition: height 2s linear;
+    left: 0;
+    border-top: 1px solid #212121;
+  }
+
   .right-header {
-    display: none;
+    margin: 0;
+    position: absolute;
+    top: 3rem;
+    width: 100vw;
+    height: 40vh;
+    visibility: visible;
+    left: 0;
+    z-index: 3;
+  }
+
+  .nav-item-container {
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 3;
   }
 
   .left-header {

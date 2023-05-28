@@ -115,3 +115,18 @@ $(".passion-icon").on("mouseover", function (e) {
 $(".passion-icon").on("mouseout", function (e) {
   $("#" + e.target.id).css("animation", "");
 });
+
+var x = window.matchMedia("(max-width: 768px)");
+function responsiveness(x) {
+  if (x.matches) {
+    $("header").append("<i class='nav-icon fa-solid fa-bars'></i>");
+    $(".right-header").before("<div class='hidden-drop-down drop-down'></div>");
+    $(".right-header").addClass("hidden-drop-down");
+  }
+}
+responsiveness(x);
+
+$(".nav-icon").on("click", function () {
+  $(".drop-down").toggleClass("hidden-drop-down");
+  $(".right-header").toggleClass("hidden-drop-down");
+});
