@@ -46,13 +46,13 @@ $(window).on("scroll", (e) => {
       .addClass("animate__animated animate__bounceIn");
   }
 
-  if (scrolled > experienceTop - 400) {
+  if (scrolled > experienceTop - 350) {
     $(".experience-page")
       .removeClass("hidden")
       .addClass("animate__animated animate__fadeIn");
   }
 
-  if (scrolled > contactTop - 400) {
+  if (scrolled > contactTop - 350) {
     $(".fa-paper-plane")
       .removeClass("hidden")
       .addClass("animate__animated animate__backInDown");
@@ -99,7 +99,6 @@ $(".experience-pic").on("mouseout", function (e) {
 });
 
 $(".rocket").on("mouseover", function () {
-  $(".to-the-top").removeClass("hidden");
   $(".to-the-top").animate({
     opacity: "1",
   });

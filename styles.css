@@ -5,8 +5,7 @@
 }
 
 .hidden {
-  visibility: hidden;
-  transition: visibility 1s ease;
+  opacity: 0;
 }
 
 :root {
