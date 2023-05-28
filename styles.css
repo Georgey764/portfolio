@@ -361,10 +361,11 @@ header {
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
+  padding: 0.5rem;
 }
 
 .resume-text {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 300;
 }
 
