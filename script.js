@@ -58,31 +58,31 @@ $(window).on("scroll", (e) => {
       .addClass("animate__animated animate__backInDown");
   }
 
-  if (scrolled >= aboutTop && scrolled < passionTop) {
+  if (scrolled >= aboutTop - 350 && scrolled < passionTop - 350) {
     $(".li1").css({ background: "gray" });
   } else {
     $(".li1").css({ background: "" });
   }
 
-  if (scrolled >= passionTop && scrolled < experienceTop) {
+  if (scrolled >= passionTop - 350 && scrolled < experienceTop - 350) {
     $(".li2").css({ background: "gray" });
   } else {
     $(".li2").css({ background: "" });
   }
 
-  if (scrolled >= experienceTop && scrolled < projectsTop) {
+  if (scrolled >= experienceTop - 350 && scrolled < projectsTop - 350) {
     $(".li3").css({ background: "gray" });
   } else {
     $(".li3").css({ background: "" });
   }
 
-  if (scrolled >= projectsTop && scrolled < contactTop) {
+  if (scrolled >= projectsTop - 350 && scrolled < contactTop - 350) {
     $(".li4").css({ background: "gray" });
   } else {
     $(".li4").css({ background: "" });
   }
 
-  if (scrolled >= contactTop) {
+  if (scrolled >= contactTop - 350) {
     $(".li5").css({ background: "gray" });
   } else {
     $(".li5").css({ background: "" });
