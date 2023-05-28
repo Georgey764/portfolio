@@ -82,7 +82,7 @@ $(window).on("scroll", (e) => {
     $(".li4").css({ background: "" });
   }
 
-  if (scrolled >= contactTop - 350) {
+  if (scrolled >= contactTop - 500) {
     $(".li5").css({ background: "gray" });
   } else {
     $(".li5").css({ background: "" });
