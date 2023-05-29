@@ -116,15 +116,13 @@ $(".passion-icon").on("mouseout", function (e) {
   $("#" + e.target.id).css("animation", "");
 });
 
-var x = window.matchMedia("(max-width: 768px)");
-function responsiveness(x) {
-  if (x.matches) {
-    $("header").append("<i class='nav-icon fa-solid fa-bars'></i>");
-    $(".right-header").addClass("hidden-drop-down");
-  }
-}
-responsiveness(x);
-
 $(".nav-icon").on("click", function () {
   $(".right-header").toggleClass("hidden-drop-down");
+});
+
+$(".nav-icon").on("click", function () {
+  $(".nav-icon").css("animation", "rotation 0.5s ease");
+  setTimeout(function () {
+    $(".nav-icon").css("animation", "");
+  }, 500);
 });
