@@ -513,7 +513,6 @@ header {
   font-weight: 300;
   overflow-y: scroll;
   overflow-x: hidden;
-  text-align: center;
 }
 
 .modal-text {
