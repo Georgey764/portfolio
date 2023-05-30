@@ -507,11 +507,12 @@ header {
 .modal-body {
   position: relative;
   margin-top: 7rem;
-  height: 450px;
+  height: 460px;
   width: 100%;
   font-family: "Lato", sans-serif;
   font-weight: 300;
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .modal-text {
