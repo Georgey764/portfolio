@@ -37,17 +37,86 @@
       <div class="right-header">
         <nav class="nav-bar" id="navbar">
           <ul class="nav-item-container">
-            <li class="li1"><a href="#about-page">ABOUT</a></li>
-            <li class="li2"><a href="#passion-page">PASSION</a></li>
-            <li class="li3"><a href="#experience-page">EXPERIENCE</a></li>
-            <li class="li4"><a href="#projects-page">PROJECTS</a></li>
-            <li class="li5"><a href="#contact-page">CONTACT</a></li>
+            <li class="li1">
+              <a class="page-scroll" href="#about-page">ABOUT</a>
+            </li>
+            <li class="li2">
+              <a class="page-scroll" href="#passion-page">PASSION</a>
+            </li>
+            <li class="li3">
+              <a class="page-scroll" href="#experience-page">EXPERIENCE</a>
+            </li>
+            <li class="li4">
+              <a class="page-scroll" href="#projects-page">PROJECTS</a>
+            </li>
+            <li class="li5">
+              <a class="page-scroll" href="#contact-page">CONTACT</a>
+            </li>
           </ul>
         </nav>
       </div>
       <i class="nav-icon fa-solid fa-bars"></i>
     </header>
     <main>
+      <!--Modals-->
+      <div class="hidden-modal overlay"></div>
+      <div class="hidden-modal overlay-project"></div>
+      <div class="modal-wrapper">
+        <div class="hidden-modal one-modal">
+          <div class="modal-title">
+            <span>Simon Game</span>
+            <p><i class="modal-subheader">Javascript Game</i></p>
+            <i class="modal-cross fa-solid fa-x"></i>
+          </div>
+          <div class="modal-body"><img src="photos/simon-game.png" /></div>
+        </div>
+
+        <div class="hidden-modal two-modal">
+          <div class="modal-title">
+            <span>Pig Game</span>
+            <p><i class="modal-subheader">Javascript Game</i></p>
+            <i class="modal-cross fa-solid fa-x"></i>
+          </div>
+          <div class="modal-body"><img src="photos/pig-game.png" /></div>
+        </div>
+
+        <div class="hidden-modal three-modal">
+          <div class="modal-title">
+            <span>Product Landing Page</span>
+            <p><i class="modal-subheader">Web Design</i></p>
+            <i class="modal-cross fa-solid fa-x"></i>
+          </div>
+          <div class="modal-body"><img src="photos/product-landing.png" /></div>
+        </div>
+
+        <div class="hidden-modal four-modal">
+          <div class="modal-title">
+            <span>Technical Documentation Page</span>
+            <p><i class="modal-subheader">Web Design</i></p>
+            <i class="modal-cross fa-solid fa-x"></i>
+          </div>
+          <div class="modal-body"><img src="photos/technical.png" /></div>
+        </div>
+
+        <div class="hidden-modal five-modal">
+          <div class="modal-title">
+            <span>Freddie Mercury Tribute Page</span>
+            <p><i class="modal-subheader">Web Design</i></p>
+            <i class="modal-cross fa-solid fa-x"></i>
+          </div>
+          <div class="modal-body"><img src="photos/tribute.png" /></div>
+        </div>
+
+        <div class="hidden-modal six-modal">
+          <div class="modal-title">
+            <span>Survey Page</span>
+            <p><i class="modal-subheader">Web Design</i></p>
+            <i class="modal-cross fa-solid fa-x"></i>
+          </div>
+          <div class="modal-body"><img src="photos/survey.png" /></div>
+        </div>
+      </div>
+
       <div class="home-page" id="welcome-section">
         <div class="home-flex-container">
           <h1 class="home-upper-text animate__animated animate__fadeInDown">
@@ -189,7 +258,18 @@
       </div>
 
       <div id="projects-page" class="projects-page">
-        <p id="projects-header">PROJECTS (SECTION In-Progress)</p>
+        <p id="projects-header">PROJECTS</p>
+        <div class="project-container">
+          <div id="one" class="project"></div>
+
+          <div id="two" class="project"></div>
+
+          <div id="three" class="project"></div>
+
+          <div id="four" class="project"></div>
+          <div id="five" class="project"></div>
+          <div id="six" class="project"></div>
+        </div>
       </div>
 
       <div id="contact-page" class="contact-page">

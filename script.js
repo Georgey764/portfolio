@@ -52,7 +52,7 @@ $(window).on("scroll", (e) => {
       .addClass("animate__animated animate__fadeIn");
   }
 
-  if (scrolled > contactTop - 350) {
+  if (scrolled > contactTop - 500) {
     $(".fa-paper-plane")
       .removeClass("hidden")
       .addClass("animate__animated animate__backInDown");
@@ -117,12 +117,47 @@ $(".passion-icon").on("mouseout", function (e) {
 });
 
 $(".nav-icon").on("click", function () {
-  $(".right-header").toggleClass("hidden-drop-down");
+  toggleOverlayOnly();
+  $("body").css("overflow", "hidden");
 });
 
 $(".nav-icon").on("click", function () {
   $(".nav-icon").css("animation", "rotation 0.5s ease");
+  $("body").css("overflow", "");
   setTimeout(function () {
     $(".nav-icon").css("animation", "");
   }, 500);
+});
+
+$(".overlay").on("click", function () {
+  toggleOverlayOnly();
+  $("body").css("overflow", "");
+});
+
+let number = "";
+$(".project").on("click", function (e) {
+  number = e.target.id;
+  toggleModal(number);
+  $("body").css("overflow", "hidden");
+});
+
+$(".overlay-project").on("click", function (e) {
+  console.log(number);
+  toggleModal(number);
+  $("body").css("overflow", "");
+});
+
+function toggleModal(e) {
+  $(".overlay-project").toggleClass("hidden-modal");
+  $(`.${e}-modal`).toggleClass("hidden-modal");
+}
+
+function toggleOverlayOnly() {
+  $(".right-header").toggleClass("hidden-drop-down");
+  $(".overlay").toggleClass("hidden-modal");
+}
+
+$(".modal-cross").on("click", function () {
+  toggleModal(number);
+  $("body").css("overflow", "");
 });
