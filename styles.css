@@ -416,6 +416,7 @@ header {
 #one {
   background: url("Photos/simon-game.png");
   background-size: cover;
+  background-position: center;
 }
 
 #two {
