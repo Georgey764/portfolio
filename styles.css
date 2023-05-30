@@ -401,6 +401,12 @@ header {
   gap: 1.5rem;
 }
 
+.project-subheader {
+  font-family: "Roboto Slab", serif;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
 .project {
   padding-top: 56.5%;
   box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.2);
@@ -456,7 +462,6 @@ header {
   z-index: 4;
   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
   border-radius: 1.25rem;
-  overflow: hidden;
 }
 
 .modal-cross {
@@ -502,7 +507,7 @@ header {
 .modal-body {
   position: relative;
   margin-top: 7rem;
-  height: 100%;
+  height: 450px;
   width: 100%;
   font-family: "Lato", sans-serif;
   font-weight: 300;
