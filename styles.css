@@ -447,32 +447,47 @@ header {
 .five-modal,
 .six-modal {
   width: min(600px, 100vw);
-  height: 100vh;
+  height: 80vh;
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -45%);
+  transform: translate(-50%, -48%);
   background-color: #fff;
   z-index: 4;
   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 1.25rem;
+  overflow: hidden;
 }
 
 .modal-cross {
   position: absolute;
   top: 3%;
-  left: 94%;
+  left: 93%;
+  font-size: 2.6rem;
 }
 
 .modal-cross:hover {
   cursor: pointer;
 }
 
-.modal-title {
+.modal-btn {
+  background: transparent;
+  border: 1px solid black;
+  padding: 0.5rem 1rem 0.5rem 1rem;
   font-family: "Lato", sans-serif;
-  text-align: center;
+  margin-left: 1.8rem;
+  margin-bottom: 2rem;
+  border-radius: 0.25rem;
+  color: black;
+}
+
+.modal-title {
+  position: fixed;
+  font-family: "Roboto Slab", serif;
+  text-align: Left;
   font-size: 1.6rem;
   height: 7rem;
-  background-color: #cfcfcf;
+  width: 100%;
   padding: 1rem;
   font-weight: 400;
   border-bottom: 1px solid #c2c2c2;
@@ -485,12 +500,28 @@ header {
 }
 
 .modal-body {
-  padding: 1rem;
+  position: relative;
+  margin-top: 7rem;
+  height: 100%;
+  width: 100%;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  overflow: scroll;
+}
+
+.modal-text {
+  padding: 1.8rem;
+  padding-bottom: 0;
 }
 
 .modal-body img {
-  width: 100%;
+  width: 90%;
   height: auto;
+  margin-top: 5%;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 0 0 1px rgba(237, 231, 225, 1);
+  border-radius: 0.25rem;
 }
 
 .project:hover {
