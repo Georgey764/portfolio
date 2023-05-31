@@ -543,6 +543,15 @@ header {
   cursor: pointer;
 }
 
+#one,
+#two,
+#three,
+#four,
+#five,
+#six{
+  background-position: center;
+}
+
 @media (max-width: 500px) {
   .project {
     height: 50vw;
