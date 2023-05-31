@@ -416,34 +416,41 @@ header {
 #one {
   background: url("Photos/simon-game.png");
   background-size: cover;
+  background-position: center;
 }
 
 #two {
   background: url("Photos/pig-game.png");
   background-size: cover;
+  background-position: center;
 }
 
 #three {
   background: url("Photos/product-landing.png");
   background-size: cover;
+  background-position: center;
 }
 
 #four {
   background: url("Photos/technical.png");
   background-size: cover;
+  background-position: center;
 }
 #five {
   background: url("Photos/tribute.png");
   background-size: cover;
+  background-position: center;
 }
 #six {
   background: url("Photos/survey.png");
   background-size: cover;
+  background-position: center;
 }
 
 #projects-header {
   font-size: 2rem;
   text-align: center;
+  background-position: center;
 }
 
 .one-modal,
@@ -452,8 +459,8 @@ header {
 .four-modal,
 .five-modal,
 .six-modal {
-  width: min(600px, 100vw);
-  height: 80vh;
+  width: min(600px, 80vw);
+  height: 70vh;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -467,7 +474,7 @@ header {
 .modal-cross {
   position: absolute;
   top: 3%;
-  left: 93%;
+  left: 90%;
   font-size: 2.6rem;
 }
 
@@ -491,9 +498,9 @@ header {
   font-family: "Roboto Slab", serif;
   text-align: Left;
   font-size: 1.6rem;
-  height: 7rem;
+  height: auto;
   width: 100%;
-  padding: 1rem;
+  padding: 1rem 2rem 1rem 1rem;
   font-weight: 400;
   border-bottom: 1px solid #c2c2c2;
 }
@@ -507,7 +514,7 @@ header {
 .modal-body {
   position: relative;
   margin-top: 7rem;
-  height: 460px;
+  height: calc(70vh - 7rem);
   width: 100%;
   font-family: "Lato", sans-serif;
   font-weight: 300;
