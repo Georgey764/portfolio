@@ -461,7 +461,7 @@ header {
 .five-modal,
 .six-modal {
   width: min(600px, 80vw);
-  height: 70vh;
+  height: 75vh;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -518,7 +518,7 @@ header {
 .modal-body {
   position: relative;
   margin-top: 0rem;
-  height: 49vh;
+  height: 55vh;
   width: 100%;
   font-family: "Lato", sans-serif;
   font-weight: 300;
