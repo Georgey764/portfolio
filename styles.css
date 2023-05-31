@@ -387,7 +387,7 @@ header {
 /* Projects Page */
 
 .projects-page {
-  padding: 4rem 2rem 4rem 2rem;
+  padding: 4rem 2rem;
   height: auto;
   width: 100vw;
   font-family: "Lato", sans-serif;
@@ -733,6 +733,16 @@ footer {
   .li4,
   .li5 {
     width: 100vw;
+  }
+
+  .project-container {
+    padding: 0 1.5rem;
+    margin: 0;
+  }
+
+  .projects-page {
+    margin: 0;
+    padding: 0;
   }
 }
 
