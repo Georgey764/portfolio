@@ -469,6 +469,7 @@ header {
   z-index: 4;
   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
   border-radius: 1.25rem;
+  overflow: hidden;
 }
 
 .modal-cross {
@@ -494,7 +495,6 @@ header {
 }
 
 .modal-title {
-  position: fixed;
   font-family: "Roboto Slab", serif;
   text-align: Left;
   font-size: 1.6rem;
@@ -503,6 +503,9 @@ header {
   padding: 1rem 2rem 1rem 1rem;
   font-weight: 400;
   border-bottom: 1px solid #c2c2c2;
+  z-index: 4;
+  background-color: white;
+  border-radius: 1.25rem 1.25rem 0 0;
 }
 
 .modal-subheader {
@@ -513,8 +516,8 @@ header {
 
 .modal-body {
   position: relative;
-  margin-top: 7rem;
-  height: calc(70vh - 7rem);
+  margin-top: 0rem;
+  height: 50vh;
   width: 100%;
   font-family: "Lato", sans-serif;
   font-weight: 300;
@@ -528,6 +531,7 @@ header {
 }
 
 .modal-body img {
+  padding-top: 1px;
   width: 90%;
   height: auto;
   margin-top: 5%;
@@ -548,7 +552,7 @@ header {
 #three,
 #four,
 #five,
-#six{
+#six {
   background-position: center;
 }
 
@@ -754,7 +758,7 @@ footer {
   height: 100vh;
   width: 100vw;
   background-color: black;
-  z-index: 1;
+  z-index: 3;
 }
 
 .hidden-modal {
