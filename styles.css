@@ -395,6 +395,7 @@ header {
 }
 
 .project-container {
+  padding: 0 5vw;
   margin-top: 2.2rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -517,7 +518,7 @@ header {
 .modal-body {
   position: relative;
   margin-top: 0rem;
-  height: 50vh;
+  height: 49vh;
   width: 100%;
   font-family: "Lato", sans-serif;
   font-weight: 300;
@@ -763,6 +764,7 @@ footer {
 
 .hidden-modal {
   display: none;
+  opacity: 0;
 }
 
 @media (max-width: 500px) {

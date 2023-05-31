@@ -116,20 +116,27 @@ $(".passion-icon").on("mouseout", function (e) {
   $("#" + e.target.id).css("animation", "");
 });
 
+let navOpen = false;
+
 $(".nav-icon").on("click", function () {
+  navOpen = !navOpen;
+  if (navOpen == true) {
+    $("body").css("overflow", "hidden");
+  } else {
+    $("body").css("overflow", "");
+  }
   toggleOverlayOnly();
-  $("body").css("overflow", "hidden");
 });
 
 $(".nav-icon").on("click", function () {
   $(".nav-icon").css("animation", "rotation 0.5s ease");
-  $("body").css("overflow", "");
   setTimeout(function () {
     $(".nav-icon").css("animation", "");
   }, 500);
 });
 
 $(".overlay").on("click", function () {
+  navOpen = !navOpen;
   toggleOverlayOnly();
   $("body").css("overflow", "");
 });
