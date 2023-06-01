@@ -146,10 +146,18 @@ $(".project").on("click", function (e) {
   number = e.target.id;
   toggleModal(number);
   $("body").css("overflow", "hidden");
+  $(`.${number}-modal`).addClass(
+    "animate__animated animate__slideInDown animate__faster"
+  );
+
+  setTimeout(function () {
+    $(`.${number}-modal`).removeClass(
+      "animate__animated animate__faster animate__slideInDown"
+    );
+  }, 500);
 });
 
 $(".overlay-project").on("click", function (e) {
-  console.log(number);
   toggleModal(number);
   $("body").css("overflow", "");
 });
