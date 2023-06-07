@@ -321,7 +321,7 @@ header {
 }
 
 .bNw {
-  filter: grayscale(100%);
+  filter: grayscale(90%);
 }
 
 .languages,
