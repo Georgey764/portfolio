@@ -176,5 +176,3 @@ $(".modal-cross").on("click", function () {
   toggleModal(number);
   $("body").css("overflow", "");
 });
-
-$(".");
