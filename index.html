@@ -23,6 +23,25 @@
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
     />
+    <script
+      defer
+      src="https://kit.fontawesome.com/fa80640981.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      defer
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="script.js" charset="UTF-8"></script>
   </head>
   <body>
     <header class="header">
@@ -69,7 +88,11 @@
             <p class="modal-cross">&times;</p>
           </div>
           <div class="modal-body">
-            <img src="Photos/simon-game.png" />
+            <img
+              src="Photos/simon-game-small.jpg"
+              data-src="Photos/simon-game.png"
+              class="modal__img--one"
+            />
             <p class="modal-text">
               The tiles will blink and you have to click the blinking tiles in
               the correct order. Each time you click the correct tile the level
@@ -94,7 +117,11 @@
             <p class="modal-cross">&times;</p>
           </div>
           <div class="modal-body">
-            <img src="Photos/pig-game.png" />
+            <img
+              src="Photos/pig-game-small.jpg"
+              data-src="Photos/pig-game.png"
+              class="modal__img--two"
+            />
             <p class="modal-text">
               Roll dice to get points. Roll a one and you lose your current
               points and your turn ends. If you click hold then you save your
@@ -117,7 +144,11 @@
             <p class="modal-cross">&times;</p>
           </div>
           <div class="modal-body">
-            <img src="Photos/product-landing.png" />
+            <img
+              src="Photos/product-landing-small.jpg"
+              data-src="Photos/product-landing.png"
+              class="modal__img--three"
+            />
             <p class="modal-text"></p>
             <a
               class="modal-link"
@@ -135,7 +166,11 @@
             <p class="modal-cross">&times;</p>
           </div>
           <div class="modal-body">
-            <img src="Photos/technical.png" />
+            <img
+              src="Photos/technical-small.jpg"
+              data-src="Photos/technical.png"
+              class="modal__img--four"
+            />
             <p class="modal-text"></p>
             <a
               class="modal-link"
@@ -153,7 +188,11 @@
             <p class="modal-cross">&times;</p>
           </div>
           <div class="modal-body">
-            <img src="Photos/tribute.png" />
+            <img
+              src="Photos/tribute-small.jpg"
+              data-src="Photos/tribute-small.png"
+              class="modal__img--five"
+            />
             <p class="modal-text"></p>
             <a
               class="modal-link"
@@ -171,7 +210,11 @@
             <p class="modal-cross">&times;</p>
           </div>
           <div class="modal-body">
-            <img src="Photos/survey.png" />
+            <img
+              src="Photos/survey-small.jpg"
+              class="modal__img--six"
+              data-src="Photos/survey.png"
+            />
             <p class="modal-text"></p>
             <a
               class="modal-link"
@@ -184,6 +227,14 @@
       </div>
 
       <div class="home-page" id="welcome-section">
+        <img
+          id="home-background"
+          class="lazy-load"
+          src="Photos/background-small.jpg"
+          data-src="Photos/background.jpg"
+          alt="background image"
+        />
+
         <div class="home-flex-container">
           <h1 class="home-upper-text animate__animated animate__fadeInDown">
             HI, I'M GEORGE
@@ -203,11 +254,15 @@
       <div id="about-page" class="about-page hidden">
         <div class="about-container animate__animated animate__fadeIn">
           <p class="about-header">ABOUT ME</p>
-          <img
-            id="portrait"
-            src="Photos/portrait.jpeg"
-            alt="George's portrait"
-          />
+          <div class="img__portrait--container">
+            <img
+              id="portrait"
+              class="lazy-load"
+              src="Photos/portrait-small.jpg"
+              data-src="Photos/portrait.jpeg"
+              alt="George's portrait"
+            />
+          </div>
           <p class="info">
             Hey, My name is George Samuel Khawas and I love web development. I
             love creating fun new usable applications and solving problems.
@@ -287,31 +342,73 @@
         <div class="experience-pic-container">
           <div class="languages">
             <p>LANGUAGES</p>
-            <img id="html" class="experience-pic" src="Photos/html.png" />
-            <img id="css" class="experience-pic" src="Photos/css.png" />
-            <img id="js" class="experience-pic" src="Photos/JS.png" />
-            <img id="pyton" class="experience-pic" src="Photos/python.png" />
-            <img id="java" class="experience-pic" src="Photos/java.png" />
+            <img
+              id="html"
+              class="experience-pic lazy-load"
+              src="Photos/html-small.jpg"
+              data-src="Photos/html.png"
+            />
+            <img
+              id="css"
+              class="experience-pic lazy-load"
+              src="Photos/css-small.jpg"
+              data-src="Photos/css.png"
+            />
+            <img
+              id="js"
+              class="experience-pic lazy-load"
+              src="Photos/JS-small.jpg"
+              data-src="Photos/JS.png"
+            />
+            <img
+              id="pyton"
+              class="experience-pic lazy-load"
+              src="Photos/python-small.jpg"
+              data-src="Photos/python.png"
+            />
+            <img
+              id="java"
+              class="experience-pic lazy-load"
+              src="Photos/java-small.jpg"
+              data-src="Photos/java.png"
+            />
           </div>
           <div class="frameworks">
             <p>FRAMEWORKS & LIBRARIES</p>
             <img
               id="bootstrap"
-              class="experience-pic"
-              src="Photos/bootstrap.png"
+              class="experience-pic lazy-load"
+              src="Photos/bootstrap-small.jpg"
+              data-src="Photos/bootstrap.png"
             />
-            <img id="sass" class="experience-pic" src="Photos/sass.png" />
-            <img id="jquery" class="experience-pic" src="Photos/jquery.png" />
+            <img
+              id="sass"
+              class="experience-pic lazy-load"
+              src="Photos/sass-small.jpg"
+              data-src="Photos/sass.png"
+            />
+            <img
+              id="jquery"
+              class="experience-pic lazy-load"
+              src="Photos/jquery-small.jpg"
+              data-src="Photos/jquery.png"
+            />
           </div>
           <div class="utility">
             <p>UTILITIES</p>
             <img id="github" class="experience-pic" src="Photos/github.svg" />
             <img
               id="photoshop"
-              class="experience-pic"
-              src="Photos/photoshop.png"
+              class="experience-pic lazy-load"
+              src="Photos/photoshop-small.jpg"
+              data-src="Photos/photoshop.png"
             />
-            <img id="canva" class="experience-pic" src="Photos/canva.png" />
+            <img
+              id="canva"
+              class="experience-pic lazy-load"
+              src="Photos/canva-small.jpg"
+              data-src="Photos/canva.png"
+            />
           </div>
         </div>
         <div id="resume-pic">
@@ -328,15 +425,65 @@
         <p id="projects-header">PROJECTS</p>
         <p class="project-subheader">Here is a list of my projects:</p>
         <div class="project-container">
-          <div id="one" class="project"></div>
+          <div class="project">
+            <img
+              id="one"
+              src="Photos/simon-game-small.jpg"
+              alt="screenshot of simon game"
+              class="modal__home--img lazy-load"
+              data-src="Photos/simon-game.png"
+            />
+          </div>
 
-          <div id="two" class="project"></div>
+          <div class="project">
+            <img
+              id="two"
+              src="Photos/pig-game-small.jpg"
+              alt="screenshot of pig game"
+              class="modal__home--img lazy-load"
+              data-src="Photos/pig-game.png"
+            />
+          </div>
 
-          <div id="three" class="project"></div>
+          <div class="project">
+            <img
+              id="three"
+              src="Photos/product-landing-small.jpg"
+              alt="screenshot of product landing page"
+              class="modal__home--img lazy-load"
+              data-src="Photos/product-landing.png"
+            />
+          </div>
 
-          <div id="four" class="project"></div>
-          <div id="five" class="project"></div>
-          <div id="six" class="project"></div>
+          <div class="project">
+            <img
+              id="four"
+              src="Photos/technical-small.jpg"
+              alt="screenshot of technical page"
+              class="modal__home--img lazy-load"
+              data-src="Photos/technical.png"
+            />
+          </div>
+
+          <div class="project">
+            <img
+              id="five"
+              src="Photos/tribute-small.jpg"
+              alt="screenshot of tribute page"
+              class="modal__home--img lazy-load"
+              data-src="Photos/tribute.png"
+            />
+          </div>
+
+          <div class="project">
+            <img
+              id="six"
+              src="Photos/tribute-small.jpg"
+              alt="screenshot of tribute page"
+              class="modal__home--img lazy-load"
+              data-src="Photos/survey.png"
+            />
+          </div>
         </div>
       </div>
 
@@ -381,21 +528,5 @@
       <i class="footer-text fa-regular fa-copyright"></i>
       <span class="footer-text">George Khawas 2023</span>
     </footer>
-
-    <script
-      src="https://kit.fontawesome.com/fa80640981.js"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://code.jquery.com/jquery-3.7.0.min.js"
-      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
-      crossorigin="anonymous"
-    ></script>
-    <script src="script.js" charset="UTF-8"></script>
   </body>
 </html>

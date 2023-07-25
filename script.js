@@ -58,7 +58,7 @@ $(window).on("scroll", (e) => {
       .addClass("animate__animated animate__backInDown");
   }
 
-  if (scrolled >= aboutTop - 350 && scrolled < passionTop - 350) {
+  if (scrolled >= aboutTop - 250 && scrolled < passionTop - 350) {
     $(".li1").css({ background: "gray" });
   } else {
     $(".li1").css({ background: "" });
@@ -150,6 +150,17 @@ $(".project").on("click", function (e) {
     "animate__animated animate__slideInDown animate__faster"
   );
 
+  if (
+    $(`.modal__img--${number}`).get(0).src !=
+    $(`.modal__img--${number}`).get(0).getAttribute("data-src")
+  ) {
+    const urlModal = $(`.modal__img--${number}`)
+      .get(0)
+      .getAttribute("data-src");
+
+    $(`.modal__img--${number}`).get(0).src = `${urlModal}`;
+  }
+
   setTimeout(function () {
     $(`.${number}-modal`).removeClass(
       "animate__animated animate__faster animate__slideInDown"
@@ -175,4 +186,37 @@ function toggleOverlayOnly() {
 $(".modal-cross").on("click", function () {
   toggleModal(number);
   $("body").css("overflow", "");
+});
+
+//Lazy loading
+const options = {
+  root: null,
+  threshold: 0,
+  rootMargin: "50px",
+};
+
+const callback = function (entries, observer) {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      const newURL = entry.target.getAttribute("data-src");
+
+      if (entry.target.tagName.toLowerCase() == "img") {
+        entry.target.src = entry.target.dataset.src;
+      }
+
+      if (entry.target.tagName.toLowerCase() == "div") {
+        entry.target.style.backgroundImage = `url("${entry.target.getAttribute(
+          "data-src"
+        )}")`;
+      }
+
+      observer.unobserve(entry.target);
+    }
+  });
+};
+
+const observer = new IntersectionObserver(callback, options);
+
+$(".lazy-load").each((index, img) => {
+  observer.observe(img);
 });
