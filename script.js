@@ -220,3 +220,5 @@ const observer = new IntersectionObserver(callback, options);
 $(".lazy-load").each((index, img) => {
   observer.observe(img);
 });
+
+
