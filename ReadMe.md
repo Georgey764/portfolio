@@ -3,5 +3,5 @@
 
 This portfolio website was made using HTML, CSS, Javascript and JQuery.
 
-Link to the website: [https://georgey764.github.io/portfolio/](https://george-khawas.netlify.app/)https://george-khawas.netlify.app/
+Link to the website: https://george-khawas.netlify.app/
 
